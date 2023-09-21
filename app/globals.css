@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Oxygen:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --light-gray: #858585,
+  --dark-gray: #171717,
+  --cool-white: #F4F3F1,
+}
+
+@layer components {
+  .max-container {
+    max-width: 1056px;
+    margin: 0 auto;
+  }
+
+  .max-hero {
+    max-width: 1615px;
+    margin: 0 auto;
+  }
+
+  .h-hero {
+    height: calc(94vh - 32px);
+  }
+
+  .parallax-hero { 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This creates the parallax effect */
+    
+
+    transform: translateY(0) translateZ(-1px) scale(1); 
+}
+
+
+  .stroke-text {
+    -webkit-text-stroke: 3px #f4f3f1; /* Define the width and color of the stroke */
+    text-fill-color: transparent; /* This is often needed for better browser compatibility */
+  }
+
+  .btn-hover {
+    border: solid 1px #858585;
+    background-color:rgb(133, 133, 133, .2);
+    backdrop-filter: blur(10px);
+  }
+
+  .grid-dispaly {
+    grid-template-rows: max-content 1fr max-content;
+  }
+
+  .heading {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    font-family: inherit;
+  }
+}
+
+html {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #171717;
+  overflow-x: hidden;
+}
+
+.body {
+}
