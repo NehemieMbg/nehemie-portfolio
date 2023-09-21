@@ -9,12 +9,12 @@ import Plx from 'react-plx';
 const Header = () => {
   const parallaxData = [
     {
-      start: 10,
-      duration: 600,
+      start: 0,
+      duration: 1300,
       properties: [
         {
           startValue: 0,
-          endValue: 180,
+          endValue: 200,
           property: 'translateY',
         },
       ],
@@ -22,7 +22,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="font-oxygen text-white font-light -z-10 overflow-x-hidden">
+    <header className="font-oxygen text-white font-light -z-10 overflow-hidden">
       <Navbar />
 
       <div className="absolute -z-30 top-[-100px] right-[-360px]">
@@ -60,7 +60,7 @@ const Header = () => {
         </Plx>
       </section>
 
-      <div className="min-h-[100vh] bg-cool-white rounded-t-[50px]"></div>
+      <div className="absolute bottom-[-10px] -z-10 h-[200px] bg-gradient-to-black w-full"></div>
     </header>
   );
 };

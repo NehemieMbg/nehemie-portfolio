@@ -24,6 +24,9 @@ const config: Config = {
         'dark-gray': '#171717',
         'cool-white': '#F4F3F1',
       },
+      backgroundImage: (theme) => ({
+        'gradient-to-black': 'linear-gradient(to bottom, transparent, black)',
+      }),
       screens: {
         wide: '1440px',
       },

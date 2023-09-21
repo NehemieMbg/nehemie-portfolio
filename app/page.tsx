@@ -1,3 +1,4 @@
+import About from './components/About/About';
 import Header from './components/Header/Header';
 
 export default function Home() {
@@ -5,10 +6,8 @@ export default function Home() {
     <>
       <Header />
 
-      <main className="h-screen w-full z-10">
-        <div className="h-screen"></div>
-        <div className="h-screen"></div>
-        <div className="h-screen"></div>
+      <main className="min-h-[100vh] bg-cool-white rounded-t-[50px] ">
+        <About />
       </main>
     </>
   );
