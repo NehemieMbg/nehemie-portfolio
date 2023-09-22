@@ -2,7 +2,7 @@ import { navbar } from '@/app/constants';
 
 function Navbar() {
   return (
-    <nav className="absolute w-full flex justify-between items-center p-10 max-xl:p-9 max-lg:p-8 max-md:p-6 text-cool-white font-oxygen">
+    <nav className="absolute w-full flex justify-between p-10 max-xl:p-9 max-lg:p-8 max-md:p-6 text-cool-white font-oxygen">
       <h1 className="font-thin text-2xl max-xl:text-[22px] max-lg:text-[20px] max-md:text-[18px]">
         <a href="/">
           <span className="text-cool-white  font-bold">NEHEMIE</span>
@@ -10,7 +10,7 @@ function Navbar() {
         </a>
       </h1>
 
-      <ul className="relative flex items-center gap-9 max-lg:text-[15px] text-light-gray font-light ">
+      <ul className="relative flex flex-col items-end gap-4 max-lg:text-[15px] text-light-gray  ">
         {navbar.links.map((link) => (
           <li
             key={link.label}

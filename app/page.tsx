@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
 
-      <main className="min-h-[100vh] bg-cool-white rounded-t-[50px]">
+      <main className="min-h-[100vh] bg-cool-white rounded-t-[50px] max-lg:rounded-t-3xl max-md:rounded-t-2xl">
         <About />
         <Skills />
         <div className="h-screen"></div>

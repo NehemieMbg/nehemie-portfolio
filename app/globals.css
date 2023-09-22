@@ -68,6 +68,23 @@
     backdrop-filter: blur(10px);
   }
 
+  .skills-sm {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+  }
+
+  .bg-transparent-dark {
+    background-color: rgba(31, 31, 31, .85);
+  }
+
+  .bg-transparent-light {
+    background-color: rgba(244, 243, 241, .75);
+  }
+
+
+
   .grid-dispaly {
     grid-template-rows: max-content 1fr max-content;
   }
