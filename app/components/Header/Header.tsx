@@ -21,6 +21,20 @@ const Header = () => {
     },
   ];
 
+  const parallaxDataSm = [
+    {
+      start: 0,
+      duration: 800,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 500,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
+
   return (
     <header
       className="font-oxygen text-white font-light -z-10 overflow-hidden"
@@ -38,11 +52,11 @@ const Header = () => {
         />
       </div>
 
-      <section className="h-hero flex flex-col justify-between">
-        <div></div>
+      <section className="h-hero flex flex-col justify-between max-lg:justify-center">
+        <div className="max-lg:hidden"></div>
 
-        <div className="pt-[40px] flex flex-col justify-start max-hero w-full px-10 max-xl:px-9 max-lg:px-8 max-md:px-6  max-lg:items-center">
-          <h3 className="text-light-gray font-light uppercase max-w-[802px] text-[15px] mb-5 max-lg:text-center">
+        <div className="pt-[40px] flex flex-col justify-start max-hero w-full px-10 max-xl:px-9 max-lg:px-8 max-md:px-6  max-lg:items-center ">
+          <h3 className="text-light-gray font-light uppercase max-w-[802px] text-[15px] mb-5 max-lg:text-center max-lg:hidden">
             <span className="text-cool-white">Hey there!</span> I&apos;m not
             your typical{' '}
             <span className="text-cool-white">full-stack developer.</span> My
@@ -50,13 +64,29 @@ const Header = () => {
             digital solutions that are as captivating as they are functional.
           </h3>
 
-          <div className="cursor-pointer w-max rounded-full overflow-hidden flex items-center gap-4 py-3 px-8 border-solid border-[1px] border-cool-white hover:btn-hover transition duration-500">
+          {/* <div className="cursor-pointer w-max rounded-full overflow-hidden flex items-center gap-4 py-3 px-8 border-solid border-[1px] border-cool-white hover:btn-hover transition duration-500 max-lg:hidden">
+            <p className="text-base">Download Cv</p>
+            <div className="w-2.5 h-2.5 bg-cool-white rounded-full"></div>
+          </div> */}
+
+          <Plx className="-z-10" parallaxData={parallaxDataSm}>
+            <p className="lg:hidden text-[100px] max-md:text-[95px] max-sm:text-[85px]  mb-8 tracking-tighter leading-[100%] text-center font-antonio font-medium uppercase">
+              I model
+              <br />
+              ideas into <br />
+              digital
+              <br />
+              realities
+            </p>
+          </Plx>
+
+          <div className="cursor-pointer w-max rounded-full overflow-hidden flex items-center gap-4 py-3 px-8 border-solid border-[1px] border-cool-white hover:btn-hover transition duration-500 max-lg:btn-hover">
             <p className="text-base">Download Cv</p>
             <div className="w-2.5 h-2.5 bg-cool-white rounded-full"></div>
           </div>
         </div>
 
-        <Plx className="-z-10" parallaxData={parallaxData}>
+        <Plx className="-z-10 max-lg:hidden" parallaxData={parallaxData}>
           <h2 className=" flex items-center gap-9 uppercase font-antonio font-medium tracking-tightest text-[9vw] text-center leading-[90%] px-10 max-xl:px-9 max-lg:px-8 max-md:px-6 pb-8 -z-50 text-cool-white">
             {hero.catchPhrase}
           </h2>
