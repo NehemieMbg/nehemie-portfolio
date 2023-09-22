@@ -19,12 +19,12 @@ const Cursor = () => {
 
   return (
     <div
-      className="fixed h-3 w-3 bg-white rounded-full z-50 pointer-events-none drop-shadow-2xl"
+      className="fixed h-4 w-4 bg-red-400 rounded-full z-50 pointer-events-none drop-shadow-2xl"
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
         transform: 'translate(-50%, -50%)',
-        transition: 'left 0.1s, top 0.1s', // Add transition for left and top properties
+        transition: 'left 0.15s, top 0.15s', // Add transition for left and top properties
       }}
     ></div>
   );
