@@ -6,8 +6,11 @@ export default function Home() {
     <>
       <Header />
 
-      <main className="min-h-[100vh] bg-cool-white rounded-t-[50px] ">
+      <main className="min-h-[100vh] bg-cool-white rounded-t-[50px]">
         <About />
+        <div className="h-screen"></div>
+        <div className="h-screen"></div>
+        <div className="h-screen"></div>
       </main>
     </>
   );
