@@ -19,7 +19,7 @@ const Skills = () => {
               </h2>
             </div>
 
-            <div className="text-sm text-end max-[850px]:text-start max-[850px]:ml-[36px]">
+            <div className="text-base text-end max-[850px]:text-start max-[850px]:ml-[36px]">
               <p>
                 <span className="font-bold">Main languages: </span>
                 {skills.languages.skills}
@@ -44,8 +44,10 @@ const Skills = () => {
               </h2>
             </div>
 
-            <div className="text-sm text-end max-[850px]:text-start max-[850px]:ml-[36px]">
-              <p className="max-w-[367px]">{skills.libraries.skills}</p>
+            <div className="text-base text-end max-[850px]:text-start max-[850px]:ml-[36px]">
+              <p className="max-w-[427px] max-[840px]:max-w-full">
+                {skills.libraries.skills}
+              </p>
             </div>
           </div>
 
@@ -62,8 +64,8 @@ const Skills = () => {
               </h2>
             </div>
 
-            <div className="text-sm text-end max-[850px]:text-start max-[850px]:ml-[36px]">
-              <p className="max-w-[367px]">{skills.tools.skills}</p>
+            <div className="text-base text-end max-[850px]:text-start max-[850px]:ml-[36px]">
+              <p className="">{skills.tools.skills}</p>
             </div>
           </div>
         </div>

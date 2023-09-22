@@ -1,7 +1,7 @@
 export const navbar = {
   links: [
     { href: '#about', label: 'About' },
-    { href: '#', label: 'My Work' },
+    { href: '#', label: 'Work' },
     { href: '#', label: 'Contact' },
   ],
 };

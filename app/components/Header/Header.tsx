@@ -22,7 +22,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="font-oxygen text-white font-light -z-10 overflow-hidden">
+    <header
+      className="font-oxygen text-white font-light -z-10 overflow-hidden"
+      id="hero"
+    >
       <Navbar />
 
       <div className="absolute -z-30 top-[-100px] right-[-360px] max-lg:hidden">
@@ -39,7 +42,7 @@ const Header = () => {
         <div></div>
 
         <div className="pt-[40px] flex flex-col justify-start max-hero w-full px-10 max-xl:px-9 max-lg:px-8 max-md:px-6  max-lg:items-center">
-          <h3 className="text-cool-white font-light uppercase max-w-[802px] text-[15px] mb-5 max-lg:text-center">
+          <h3 className="text-light-gray font-light uppercase max-w-[802px] text-[15px] mb-5 max-lg:text-center">
             <span className="text-cool-white">Hey there!</span> I&apos;m not
             your typical{' '}
             <span className="text-cool-white">full-stack developer.</span> My

@@ -10,7 +10,7 @@ function Navbar() {
         </a>
       </h1>
 
-      <ul className="relative flex flex-col items-end gap-4 max-lg:text-[15px] text-light-gray  ">
+      <ul className="relative flex flex-col items-end gap-4 max-lg:text-[15px] text-cool-white">
         {navbar.links.map((link) => (
           <li
             key={link.label}
