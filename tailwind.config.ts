@@ -26,6 +26,8 @@ const config: Config = {
       },
       backgroundImage: (theme) => ({
         'gradient-to-black': 'linear-gradient(to bottom, transparent, black)',
+        'radiant-gradient':
+          'radial-gradient(ellipse at center, #FFB6C1 0%, #FF69B4 50%, #FF1493 100%)',
       }),
       screens: {
         wide: '1440px',

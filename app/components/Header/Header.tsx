@@ -24,11 +24,11 @@ const Header = () => {
   const parallaxDataSm = [
     {
       start: 0,
-      duration: 800,
+      duration: 1200,
       properties: [
         {
           startValue: 0,
-          endValue: 500,
+          endValue: 200,
           property: 'translateY',
         },
       ],
@@ -43,24 +43,26 @@ const Header = () => {
       <Navbar />
 
       <div className="absolute -z-30 top-[-100px] right-[-360px] max-lg:hidden">
-        <Image
-          src="/images/hero/portrait-img.png"
-          alt="Picture of Nehemie Mombanga"
-          width={1100}
-          height={1176}
-          className="saturate-0 min-h-[100vh]"
-        />
+        {/* <Image
+        /> */}
       </div>
 
       <section className="h-hero flex flex-col justify-between max-lg:justify-center">
         <div className="max-lg:hidden"></div>
 
-        <div className="pt-[40px] flex flex-col justify-start max-hero w-full px-10 max-xl:px-9 max-lg:px-8 max-md:px-6  max-lg:items-center ">
-          <h3 className="text-light-gray font-light uppercase max-w-[802px] text-[15px] mb-5 max-lg:text-center max-lg:hidden">
-            <span className="text-cool-white">Hey there!</span> I&apos;m not
-            your typical{' '}
-            <span className="text-cool-white">full-stack developer.</span> My
-            eye for design and my knack for coding converge to create digital
+        <div className="pt-[40px] flex items-center flex-col justify-start max-hero w-full px-10 max-xl:px-9 max-lg:px-8 max-md:px-6  max-lg:items-center ">
+          <Image
+            src="/images/hero/6nehemie-icon.jpeg"
+            alt="Picture of Nehemie Mombanga"
+            width={150}
+            height={150}
+            className="rounded-2xl mb-6"
+          />
+
+          <h3 className="text-light-gray font-light max-w-[502px] text-[15px] mb-12 max-lg:text-center max-lg:hidden text-center uppercase">
+            <span className="text-red-400">Hey there!</span> I&apos;m not your
+            typical <span className="text-red-400">full-stack developer.</span>{' '}
+            My eye for design and my knack for coding converge to create digital
             digital solutions that are as captivating as they are functional.
           </h3>
 
@@ -70,7 +72,7 @@ const Header = () => {
           </div> */}
 
           <Plx className="-z-10" parallaxData={parallaxDataSm}>
-            <p className="lg:hidden text-[90px] max-md:text-[80px] max-sm:text-[70px]  mb-8 tracking-tighter leading-[100%] text-center font-antonio font-medium uppercase">
+            <p className="lg:hidden text-[90px] max-md:text-[80px] max-sm:text-[70px]  mb-16 tracking-tighter leading-[100%] text-center font-antonio font-medium uppercase text-cool-white">
               I model
               <br />
               ideas into <br />
