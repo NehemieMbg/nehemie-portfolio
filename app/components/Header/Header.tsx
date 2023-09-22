@@ -70,7 +70,7 @@ const Header = () => {
           </div> */}
 
           <Plx className="-z-10" parallaxData={parallaxDataSm}>
-            <p className="lg:hidden text-[100px] max-md:text-[95px] max-sm:text-[85px]  mb-8 tracking-tighter leading-[100%] text-center font-antonio font-medium uppercase">
+            <p className="lg:hidden text-[90px] max-md:text-[80px] max-sm:text-[70px]  mb-8 tracking-tighter leading-[100%] text-center font-antonio font-medium uppercase">
               I model
               <br />
               ideas into <br />
