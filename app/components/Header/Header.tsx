@@ -40,20 +40,21 @@ const Header = () => {
 
         <div className="pt-[40px] flex flex-col justify-start max-hero w-full px-10 max-xl:px-9 max-lg:px-8 max-md:px-6  max-lg:items-center">
           <h3 className="text-cool-white font-light uppercase max-w-[802px] text-[15px] mb-5 max-lg:text-center">
-            <span className="text-red-400">Hey there!</span> I&apos;m not your
-            typical <span className="text-red-400">full-stack developer.</span>{' '}
-            My eye for design and my knack for coding converge to create digital
+            <span className="text-cool-white">Hey there!</span> I&apos;m not
+            your typical{' '}
+            <span className="text-cool-white">full-stack developer.</span> My
+            eye for design and my knack for coding converge to create digital
             digital solutions that are as captivating as they are functional.
           </h3>
 
-          <div className="cursor-pointer w-max rounded-full overflow-hidden flex items-center gap-4 py-3 px-8 border-solid border-[1px] border-red-400 hover:btn-hover transition duration-500">
+          <div className="cursor-pointer w-max rounded-full overflow-hidden flex items-center gap-4 py-3 px-8 border-solid border-[1px] border-cool-white hover:btn-hover transition duration-500">
             <p className="text-base">Download Cv</p>
             <div className="w-2.5 h-2.5 bg-cool-white rounded-full"></div>
           </div>
         </div>
 
         <Plx className="-z-10" parallaxData={parallaxData}>
-          <h2 className="stroke-text text-transparent flex items-center gap-9 uppercase font-antonio font-medium tracking-tightest text-[9vw] text-center leading-[90%] px-10 max-xl:px-9 max-lg:px-8 max-md:px-6 pb-8 -z-50 text-cool-white">
+          <h2 className=" flex items-center gap-9 uppercase font-antonio font-medium tracking-tightest text-[9vw] text-center leading-[90%] px-10 max-xl:px-9 max-lg:px-8 max-md:px-6 pb-8 -z-50 text-cool-white">
             {hero.catchPhrase}
           </h2>
         </Plx>

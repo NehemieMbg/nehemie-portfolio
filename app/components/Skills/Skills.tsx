@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section className="font-oxygen text-light-gray max-w-[1368px] h-screen mx-auto  px-10 max-xl:px-9 max-lg:px-8 max-md:px-6">
       <div className="">
-        <h2 className="uppercase font-antonio mb-8 text-2xl text-red-400  text-right">
+        <h2 className="uppercase font-antonio mb-8 text-2xl text-light-gray  text-right">
           My Skills
         </h2>
         <div className="text-dark-gray text-[40px] text-justify">
