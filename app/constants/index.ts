@@ -30,3 +30,19 @@ export const skills = {
     skills: 'Git, Figma, Vercel, Ubuntu, Postman, Visual Studio Code.',
   },
 };
+
+export const connection = {
+  email: 'nehemie.mbg@gmail.com',
+  linkedIn: {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/nehemie-mombanga/',
+  },
+  instagram: {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/6nehemie/',
+  },
+  github: {
+    label: 'Github',
+    href: 'https://github.com/NehemieMbg',
+  },
+};

@@ -11,8 +11,6 @@ export default function Home() {
         <About />
         <Skills />
         <div className="h-screen"></div>
-        <div className="h-screen"></div>
-        <div className="h-screen"></div>
       </main>
     </>
   );

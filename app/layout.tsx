@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Cursor from './components/Cursor/Cursor';
 import StickyNav from './components/StickyNav/StickyNav';
+import Footer from './components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
         <Cursor />
         <StickyNav />
         {children}
-        <footer></footer>
+        <Footer />
       </body>
     </html>
   );

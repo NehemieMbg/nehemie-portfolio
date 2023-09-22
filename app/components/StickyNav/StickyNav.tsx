@@ -16,9 +16,17 @@ const StickyNav = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const heroHeight = document.getElementById('hero')?.offsetHeight;
-      if (heroHeight) {
-        setIsNavbarVisible(window.scrollY >= heroHeight);
+      const heroHeight = document.getElementById('hero')?.offsetHeight || 0;
+      const footerOffsetTop = document.getElementById('footer')?.offsetTop || 0;
+      const windowHeight = window.innerHeight;
+
+      if (
+        window.scrollY >= heroHeight &&
+        window.scrollY + windowHeight <= footerOffsetTop
+      ) {
+        setIsNavbarVisible(true);
+      } else {
+        setIsNavbarVisible(false);
       }
     };
 
@@ -63,6 +71,7 @@ const StickyNav = () => {
               <li
                 key={link.label}
                 className="hover:text-cool-white transition-colors duration-200"
+                onClick={() => setMenuIsOpen(false)}
               >
                 <a href={link.href}>{link.label}</a>
               </li>
