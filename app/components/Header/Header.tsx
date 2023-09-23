@@ -63,7 +63,7 @@ const Header = () => {
             <span className="text-red-400">Hey there!</span> I&apos;m not your
             typical <span className="text-red-400">full-stack developer.</span>{' '}
             My eye for design and my knack for coding converge to create digital
-            digital solutions that are as captivating as they are functional.
+            solutions that are as captivating as they are functional.
           </h3>
 
           {/* <div className="cursor-pointer w-max rounded-full overflow-hidden flex items-center gap-4 py-3 px-8 border-solid border-[1px] border-cool-white hover:btn-hover transition duration-500 max-lg:hidden">
