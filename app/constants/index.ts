@@ -23,7 +23,7 @@ export const skills = {
   libraries: {
     label: 'Libraries & Frameworks',
     skills:
-      'React.js, Next.js, Redux Toolkit, SCSS, Tailwind, MangoDB, Mangoose, Prisma, MySQL, Hardhat, Ether.js, Express.',
+      'React.js, Next.js, Redux Toolkit, SCSS, Tailwind,React-router-dom MangoDB, Mangoose, Prisma, MySQL, Hardhat, Ether.js, Express.',
   },
   tools: {
     label: 'Tools & Platforms',
